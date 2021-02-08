@@ -57,12 +57,38 @@
 
   </head>
   <body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v9.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution="setup_tool"
+  page_id="110762270453736">
+</div>
+
+
   <div class="container" style="margin-top:20px">
 	  <div class="jumbotron">
 	    <h1>Under Construction</h1> 
 	    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
 
-	    <p>Please come back later, we're still under development.</p> 
+        <p>Please come back later, we're still under development.</p> 
+        <p>Reach us thru our <a href='https://m.me/perfectbrideph'>Facebook messenger</a></p> 
 	  </div>
 	  <p>Last Updated: February 2021</p> 
 	
